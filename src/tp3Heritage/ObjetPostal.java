@@ -3,7 +3,7 @@ package tp3Heritage;
 public class ObjetPostal {
 	
 	public ObjetPostal(String origine, String destination, int codePostal,
-			int poids, int volume, int taux) {
+			double poids, double volume, int taux) {
 		this.origine = origine;
 		this.destination = destination;
 		this.codePostal = codePostal;
@@ -13,7 +13,8 @@ public class ObjetPostal {
 	}
 
 	String origine, destination;
-	int codePostal, poids, volume,taux;
+	int codePostal, taux;
+	double poids, volume;
 	
 	public String getOrigine() {
 		return origine;
@@ -33,13 +34,13 @@ public class ObjetPostal {
 	public void setCodePostal(int codePostal) {
 		this.codePostal = codePostal;
 	}
-	public int getPoids() {
+	public double getPoids() {
 		return poids;
 	}
 	public void setPoids(int poids) {
 		this.poids = poids;
 	}
-	public int getVolume() {
+	public double getVolume() {
 		return volume;
 	}
 	public void setVolume(int volume) {
