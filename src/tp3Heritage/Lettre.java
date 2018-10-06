@@ -42,9 +42,6 @@ public class Lettre extends ObjetPostal {
 		caracteristiques += "\n";
 		
 		return caracteristiques;
-		
-		/*return "Lettre [urgence=" + urgente + ", origine=" + origine + ", destination=" + destination + ", codePostal="
-				+ codePostal + ", poids=" + poids + ", volume=" + volume + ", taux=" + taux + "]";*/
 	}
 	
 	
