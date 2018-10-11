@@ -42,6 +42,7 @@ public class Lettre extends ObjetPostal {
 			caracteristiques += "Cette lettre est ordinaire \n";
 		}
 		
+		caracteristiques += "tarif d'affranchissement : " + this.tarifAffranchissement() + " euros\n";		
 		return caracteristiques;
 	}
 	

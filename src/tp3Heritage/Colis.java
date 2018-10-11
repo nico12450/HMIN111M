@@ -46,6 +46,8 @@ public class Colis extends ObjetPostal {
 		caracteristiques += "contenu du colis : " + this.contenu + "\n";
 		caracteristiques += "valeur du colis : " + this.valeur + " euros\n";
 		
+		caracteristiques += "tarif d'affranchissement : " + this.tarifAffranchissement() + " euros\n";
+		
 		return caracteristiques;
 	}
 	
