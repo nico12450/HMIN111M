@@ -66,7 +66,7 @@ public class ObjetPostal {
 		
 		caracteristiques += "poids : " + this.poids + " g, ";
 		caracteristiques += "volume : " + this.volume + " m3 ";
-		caracteristiques += "taux de recommendation : " + this.taux;
+		caracteristiques += "taux de recommandation : " + this.taux;
 		
 		caracteristiques += "\n";
 		
