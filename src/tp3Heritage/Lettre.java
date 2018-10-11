@@ -18,6 +18,15 @@ public class Lettre extends ObjetPostal {
 		this.urgente = urgence;
 	}
 
+	public double tarifAffranchissement() {
+		
+		if(this.isUrgence()) {
+			return super.tarifAffranchissement() + 0.8;
+		}
+		
+		return super.tarifAffranchissement() + 0.5;
+	}
+
 	@Override
 	public String toString() {
 		

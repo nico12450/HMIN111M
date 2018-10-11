@@ -27,6 +27,15 @@ public class Colis extends ObjetPostal {
 	public void setValeur(int valeur) {
 		this.valeur = valeur;
 	}
+	
+	public double tarifAffranchissement() {
+		
+		if(this.volume>0.125) {
+			return super.tarifAffranchissement() + 5;
+		}
+		
+		return super.tarifAffranchissement() + 2;
+	}
 
 	@Override
 	public String toString() {

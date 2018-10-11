@@ -52,7 +52,23 @@ public class ObjetPostal {
 	public void setTaux(int taux) {
 		this.taux = taux;
 	}
-
+	
+	public double tarifAffranchissement() {
+		
+		double tarif = 0;
+		
+		switch (this.taux) {
+		
+			case 1: tarif += 0.5;
+					break;
+			
+			case 2: tarif += 1.5;
+					break;
+		
+		}
+		
+		return tarif;
+	}
 	
 	
 	public String toString() {
