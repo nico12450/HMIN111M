@@ -52,11 +52,25 @@ public class ObjetPostal {
 	public void setTaux(int taux) {
 		this.taux = taux;
 	}
-	@Override
+
+	
+	
 	public String toString() {
-		return "ObjetPostal [origine=" + origine + ", destination="
-				+ destination + ", codePostal=" + codePostal + ", poids="
-				+ poids + ", volume=" + volume + ", taux=" + taux + "]";
+		
+		String caracteristiques = new String();
+		
+		caracteristiques += "\n";
+		caracteristiques += "Objet postal en provenance de " + this.origine + ", ";
+		caracteristiques += "à destination de " + this.destination + ", ";
+		caracteristiques += "code postal du destinataire : " + this.codePostal + "\n";
+		
+		caracteristiques += "poids : " + this.poids + " g, ";
+		caracteristiques += "volume : " + this.volume + " m3 ";
+		caracteristiques += "taux de recommendation : " + this.taux;
+		
+		caracteristiques += "\n";
+		
+		return caracteristiques;
 	}
 	
 	

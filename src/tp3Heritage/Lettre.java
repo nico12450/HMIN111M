@@ -23,10 +23,8 @@ public class Lettre extends ObjetPostal {
 		
 		String caracteristiques = new String();
 		
-		caracteristiques += "\n";
-		caracteristiques += "Lettre en provenance de " + this.origine + ", ";
-		caracteristiques += "à destination de " + this.destination + ", ";
-		caracteristiques += "code postal du destinataire : " + this.codePostal + "\n";
+		caracteristiques += super.toString();
+		caracteristiques = caracteristiques.replaceAll("Objet postal", "Lettre");
 		
 		if(this.urgente) {
 			caracteristiques += "Cette lettre est urgente \n";
@@ -34,12 +32,6 @@ public class Lettre extends ObjetPostal {
 		else {
 			caracteristiques += "Cette lettre est ordinaire \n";
 		}
-		
-		caracteristiques += "elle pèse " + this.poids + " g, ";
-		caracteristiques += "a un volume de " + this.volume + " m3 ";
-		caracteristiques += "et un taux de recommendation de " + this.taux;
-		
-		caracteristiques += "\n";
 		
 		return caracteristiques;
 	}

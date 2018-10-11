@@ -11,4 +11,22 @@ public class Colis extends ObjetPostal {
 	
 	private String contenu, valeur;
 
+	public String getContenu() {
+		return contenu;
+	}
+
+	public void setContenu(String contenu) {
+		this.contenu = contenu;
+	}
+
+	public String getValeur() {
+		return valeur;
+	}
+
+	public void setValeur(String valeur) {
+		this.valeur = valeur;
+	}
+	
+	
+
 }
