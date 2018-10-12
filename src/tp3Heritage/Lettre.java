@@ -26,6 +26,22 @@ public class Lettre extends ObjetPostal {
 		
 		return super.tarifAffranchissement() + 0.5;
 	}
+	
+	public double tarifRemboursement(){
+		
+		switch (this.taux){
+			
+			case 1: return 1.5;
+			
+			case 2: return 15;
+			
+			default: return super.tarifRemboursement();
+					
+
+		}
+		
+		
+	}
 
 	@Override
 	public String toString() {
@@ -42,7 +58,8 @@ public class Lettre extends ObjetPostal {
 			caracteristiques += "Cette lettre est ordinaire \n";
 		}
 		
-		caracteristiques += "tarif d'affranchissement : " + this.tarifAffranchissement() + " euros\n";		
+		caracteristiques += "tarif d'affranchissement : " + this.tarifAffranchissement() + " euros\n";
+		caracteristiques += "tarif de remboursement : " + this.tarifRemboursement() + " euros\n";
 		return caracteristiques;
 	}
 	

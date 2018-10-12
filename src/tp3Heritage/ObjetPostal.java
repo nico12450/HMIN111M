@@ -70,21 +70,27 @@ public class ObjetPostal {
 		return tarif;
 	}
 	
+	public double tarifRemboursement(){	
+		
+		return 0;
+		
+	}
+	
 	
 	public String toString() {
 		
-		String caracteristiques = new String();
+		String caracteristiques = "";
 		
-		caracteristiques += "\n";
+		caracteristiques += System.lineSeparator();
 		caracteristiques += "Objet postal en provenance de " + this.origine + ", ";
-		caracteristiques += "à destination de " + this.destination + ", ";
+		caracteristiques += "Ã  destination de " + this.destination + ", ";
 		caracteristiques += "code postal du destinataire : " + this.codePostal + "\n";
 		
 		caracteristiques += "poids : " + this.poids + " g, ";
 		caracteristiques += "volume : " + this.volume + " m3 ";
 		caracteristiques += "taux de recommandation : " + this.taux;
 		
-		caracteristiques += "\n";
+		caracteristiques += System.lineSeparator();
 		
 		return caracteristiques;
 	}

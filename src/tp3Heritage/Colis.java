@@ -36,6 +36,16 @@ public class Colis extends ObjetPostal {
 		
 		return super.tarifAffranchissement() + 2;
 	}
+	
+	public double tarifRemboursement(){
+		
+		switch (this.taux){
+			case 1: return 0.1*this.valeur;
+			case 2: return 0.5*this.valeur;
+			default: return super.tarifRemboursement();
+		}
+		
+	}
 
 	@Override
 	public String toString() {
@@ -47,7 +57,8 @@ public class Colis extends ObjetPostal {
 		caracteristiques += "valeur du colis : " + this.valeur + " euros\n";
 		
 		caracteristiques += "tarif d'affranchissement : " + this.tarifAffranchissement() + " euros\n";
-		
+		caracteristiques += "tarif de remboursement : " + this.tarifRemboursement() + " euros\n";
+			
 		return caracteristiques;
 	}
 	
