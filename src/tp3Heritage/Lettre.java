@@ -60,6 +60,7 @@ public class Lettre extends ObjetPostal {
 		
 		caracteristiques += "tarif d'affranchissement : " + this.tarifAffranchissement() + " euros\n";
 		caracteristiques += "tarif de remboursement : " + this.tarifRemboursement() + " euros\n";
+		
 		return caracteristiques;
 	}
 	

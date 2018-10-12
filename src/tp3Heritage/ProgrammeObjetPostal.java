@@ -9,7 +9,7 @@ public class ProgrammeObjetPostal {
 		System.out.println(l1);
 		System.out.println(l2);
 		
-		Colis c1 = new Colis("banquiz compagnie", "famille Miko, igloo 2, banquise ouest", 15000, 5000, 0.25, 1, "glace pilée", 15);
+		Colis c1 = new Colis("banquiz compagnie", "famille Miko, igloo 2, banquise ouest", 15000, 5000, 0.25, 1, "glace pilÃ©e", 15);
 		Colis c2 = new Colis("banquiz compagnie", "sculpteur Frodok, hangar 200, terres ouest", 25000, 2000000, 1, 2, "glace en cube", 40);
 		System.out.println(c1);
 		System.out.println(c2);
