@@ -3,7 +3,9 @@ package tp4;
 public class ProgrammeTableauDeCaracteres {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		MonTableauDeCaracteres t1 = new MonTableauDeCaracteres(new char[]{'a','b','c','d'});
+		t1.afficher();
 
 	}
 
