@@ -115,6 +115,48 @@ public class Monde {
 			
 		}
 		
+		System.out.print("\n");
+		
+	}
+	
+	void etatSuivant(){
+		
+		Cellule[][] contenuTemporaire = new Cellule[this.nbLignes][this.nbColonnes];
+		
+		for(int i = 0; i < nbLignes; i++) {
+			
+			for(int j = 0; j < nbColonnes; j++) {
+				
+				contenuTemporaire[i][j] = new Cellule(this.getCellule(j, i).estVivante(),this,i,j);
+				
+			}
+			
+		}
+		
+		for(int i = 0; i < nbLignes; i++) {
+			
+			for(int j = 0; j < nbColonnes; j++) {
+				
+				contenuTemporaire[i][j].prochainEtat(this.getNbVoisins(j, i));
+				//System.out.print("position : " + j + " , " + i + " nbvoisins : ");
+				//System.out.println(this.getNbVoisins(j, i));
+				
+			}
+			
+		}
+		
+		for(int i = 0; i < nbLignes; i++) {
+			
+			for(int j = 0; j < nbColonnes; j++) {
+				
+				this.contenu[i][j] = contenuTemporaire[i][j];
+				
+			}
+			
+		}
+		
+		
+		
 	}
 	
 	
