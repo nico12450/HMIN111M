@@ -34,7 +34,7 @@ public class Cellule {
 	}
 	
 	public int[] getPosition() {
-		return new int[] {this.ligne,this.colonne};
+		return new int[] {this.colonne,this.ligne};
 	}
 	
 	public void meurt() {
