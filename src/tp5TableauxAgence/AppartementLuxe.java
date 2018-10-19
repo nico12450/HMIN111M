@@ -18,4 +18,10 @@ public class AppartementLuxe extends Appartement {
 		return 1.1;
 	}
 
+	@Override
+	public String toString() {
+		return "AppartementLuxe [quartier=" + quartier + ", services="
+				+ services + "]";
+	}
+
 }

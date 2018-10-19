@@ -48,5 +48,13 @@ public abstract class Appartement {
 	public double loyer(){
 		return valLocativeBase()*coeffModerateur();
 	}
+	@Override
+	public String toString() {
+		return "Appartement [nbPieces=" + nbPieces + ", anneeConstruction="
+				+ anneeConstruction + ", adresse=" + adresse + ", superficie="
+				+ superficie + "]";
+	}
+	
+	
 
 }

@@ -22,4 +22,10 @@ public class AppartementNormal extends Appartement {
 		return 0.1;
 	}
 
+	@Override
+	public String toString() {
+		return "AppartementNormal [nbNuisances=" + nbNuisances + ", nuisances="
+				+ nuisances + "]";
+	}
+
 }

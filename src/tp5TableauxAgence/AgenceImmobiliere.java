@@ -78,5 +78,20 @@ public class AgenceImmobiliere {
 		return sommeLoyers()/nbApptGeres;
 	}
 	
+	public Appartement getAppartement(String adresse){
+		
+		for (Appartement a : this.appartements){
+			
+			if(a.getAdresse().equals(adresse)){
+				return a;
+			}
+			
+		}
+		
+		return null;
+	}
+	
+	
+	
 
 }
