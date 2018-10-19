@@ -1,6 +1,6 @@
 package tp3Heritage;
 
-public class ObjetPostal {
+public abstract class ObjetPostal {
 	
 	public ObjetPostal(String origine, String destination, int codePostal,
 			double poids, double volume, int taux) {
