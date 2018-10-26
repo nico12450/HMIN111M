@@ -51,6 +51,7 @@ public class AgenceImmobiliere {
 		}
 		
 		nouveauTableau[i] = a;
+		this.appartements = new Appartement[this.nbApptGeres +1];
 		
 		i = 0;
 		
@@ -59,6 +60,8 @@ public class AgenceImmobiliere {
 			this.appartements[i] = nouveauTableau[i];
 			
 		}
+		
+		nbApptGeres++;
 		
 	}
 	
@@ -89,6 +92,35 @@ public class AgenceImmobiliere {
 		}
 		
 		return null;
+	}
+	
+	public void supprimerAppartement(Appartement a){
+		
+		Appartement nouveauTableau[] = new Appartement[this.nbApptGeres - 1];
+		
+		int i = 0;
+		
+		while (i<nbApptGeres){
+			
+			if(this.appartements[i].getAdresse()!=a.getAdresse()){
+				nouveauTableau[i] = this.appartements[i];
+			}
+			i++;
+			
+		}
+		
+		i = 0;
+		
+		this.appartements = new Appartement[this.nbApptGeres-1];
+		
+		while(i<nbApptGeres){
+			
+			this.appartements[i] = nouveauTableau[i];
+			
+		}
+		
+		nbApptGeres++;
+		
 	}
 	
 	

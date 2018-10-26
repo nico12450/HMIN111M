@@ -15,6 +15,7 @@ public class ProgrammeAgence {
 		System.out.println(a2.loyer());
 		System.out.println(ag1.sommeLoyers());
 		System.out.println(ag1.moyenneLoyers());
+		System.out.println(ag1.getAppartement("1092 avenue du pere soulas"));
 		
 
 	}
